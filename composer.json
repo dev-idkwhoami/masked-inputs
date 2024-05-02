@@ -1,0 +1,45 @@
+{
+    "name": "dev-idkwhoami/masked-inputs",
+    "type": "library",
+    "version": "0.1.0",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "DevIDKWHOAMI\\MaskedInputs\\": "src/"
+        }
+    },
+    "scripts": {
+        "format": "vendor/bin/pint"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DevIDKWHOAMI\\MaskedInputs\\MaskedInputsServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Maximilian Oswald",
+            "email": "maxi.osw@outlook.com"
+        }
+    ],
+    "keywords": [
+        "dev-idkwhoami",
+        "laravel",
+        "masked-inputs"
+    ],
+    "homepage": "https://github.com/dev-idkwhoami/masked-inputs",
+    "support": {
+        "issues": "https://github.com/dev-idkwhoami/masked-inputs/issues",
+        "source": "https://github.com/dev-idkwhoami/masked-inputs"
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=8.2",
+        "filament/support": "^v3.2.72"
+    },
+    "require-dev": {
+        "laravel/pint": "dev-main"
+    }
+}
