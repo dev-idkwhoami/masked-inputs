@@ -1,7 +1,7 @@
 # A Filament PHP plugin for masking text inputs
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/dev-idkwhoami/masked-inputs.svg?style=flat-square)](https://packagist.org/packages/cheesegrits/filament-phone-numbers)
-[![Total Downloads](https://img.shields.io/packagist/dt/dev-idkwhoami/masked-inputs.svg?style=flat-square)](https://packagist.org/packages/cheesegrits/filament-phone-numbers)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/dev-idkwhoami/masked-inputs.svg?style=flat-square)](https://packagist.org/packages/cdev-idkwhoami/masked-inputs)
+[![Total Downloads](https://img.shields.io/packagist/dt/dev-idkwhoami/masked-inputs.svg?style=flat-square)](https://packagist.org/packages/dev-idkwhoami/masked-inputs)
 
 This package provides a MaskedInput field for masking text values in [Filament PHP](https://github.com/filamentphp/filament).
 
