@@ -1,0 +1,19 @@
+{
+  "name": "masked-inputs",
+  "version": "0.1.0",
+  "description": "This package provides a MaskedInput field for masking text values in FilamentPHP",
+  "type": "module",
+  "scripts": {
+    "build": "node bin/build.js"
+  },
+  "keywords": [
+    "masked",
+    "input"
+  ],
+  "author": "dev-idkwhoami",
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "^0.20.2",
+    "imask": "^7.6.0"
+  }
+}
