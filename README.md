@@ -1,5 +1,8 @@
 # A Filament PHP plugin for masking text inputs
 
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/dev-idkwhoami/masked-inputs.svg?style=flat-square)](https://packagist.org/packages/cheesegrits/filament-phone-numbers)
+[![Total Downloads](https://img.shields.io/packagist/dt/dev-idkwhoami/masked-inputs.svg?style=flat-square)](https://packagist.org/packages/cheesegrits/filament-phone-numbers)
+
 This package provides a MaskedInput field for masking text values in [Filament PHP](https://github.com/filamentphp/filament).
 
 ## Installation
@@ -47,6 +50,22 @@ const mask = IMask(element, {{ $options }});
 This way `->options()` gives you 100% control over `maskOptions`
 
 Read more on how to define your masks here [Guide Masks](https://imask.js.org/guide.html#masked)
+
+### Other Examples
+
+This only allows values like `150d`, `3m` & `1y` and prevents values like `m1`, `15y5`, `6s`.
+```php
+use DevIDKWHOAMI\MaskedInputs\Forms\Components\MaskedInput;
+
+MaskedInput::make('duration')
+    ->helperText("d = days, m = months, y = years")
+    ->options(RawJs::make(<<<'JS'
+        { mask: 'num#', definitions: { '#': /[dmy]/, '&': /\d+/ }, blocks: { num: { mask: Number, expose: true }} }
+        JS)),
+```
+
+## Ideas
+- Predefined RawJs objects for easier use
 
 ## Changelog
 
